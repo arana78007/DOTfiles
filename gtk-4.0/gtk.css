@@ -1,0 +1,51 @@
+/* --- LINEN & COCOA (SOLARIZED CREAM) THEME --- */
+
+/* The Core Palette */
+@define-color window_bg_color #fdf6e3;    /* Your specific Linen Cream */
+@define-color window_fg_color #3c3836;    /* Gruvbox Cocoa text */
+
+@define-color view_bg_color #fdf6e3;      /* Keeping it consistent for a clean look */
+@define-color view_fg_color #3c3836;
+
+/* Sidebar - A slightly "toasted" version of your cream */
+@define-color sidebar_bg_color #eee8d5;   /* Solarized Base2 */
+@define-color sidebar_fg_color #3c3836;
+@define-color sidebar_backdrop_color #eee8d5;
+
+/* Headerbar - High Contrast Sand */
+@define-color headerbar_bg_color #d5c4a1; /* Gruvbox Tan */
+@define-color headerbar_fg_color #3c3836;
+@define-color headerbar_backdrop_color #d5c4a1;
+
+/* Accents - Terracotta / Caramel */
+@define-color accent_bg_color #af3a03;    
+@define-color accent_fg_color #fdf6e3;
+@define-color accent_color @accent_bg_color;
+
+/* --- COMPONENT STYLING --- */
+
+headerbar {
+    background-color: @headerbar_bg_color;
+    border-bottom: 1px solid #bdae93;
+    box-shadow: none;
+    padding: 6px;
+}
+
+.navigation-sidebar {
+    background-color: @sidebar_bg_color;
+    border-right: 1px solid #bdae93;
+}
+
+.navigation-sidebar row:selected {
+    background-color: @accent_bg_color;
+    color: @accent_fg_color;
+    border-radius: 4px;
+    margin: 2px 8px;
+}
+
+/* Search and Input boxes */
+entry {
+    background-color: #ffffff;
+    border: 1px solid #bdae93;
+    color: @window_fg_color;
+}
